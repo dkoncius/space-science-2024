@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../assets/space-banner.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    font-family: roboto;
+    padding: 20px;
+    padding-top: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header .brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #a132bc;
+}
+
+header .brand img {
+    width: 50px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header .social {
+    display: flex;
+    gap: 15px;
+}
+
+header .social i {
+    width: 35px;
+    height: 35px;
+    background: #21225b;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

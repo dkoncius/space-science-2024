@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space science: countdown page</title>
+    <!-- Icon -->
+    <link rel="icon" href="../assets/icon.png">
+
+    <!-- Google fonts: roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/countdown.css">
+    <link rel="stylesheet" href="../styles/media.css">
+</head>
+<body>
+   <header>
+        <a class="brand" href="home.html">
+            <img src="../assets/icon.png" alt="">
+            <h2>Space science</h2>
+        </a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="countdown.html">Countdown</a>
+            <a href="satelite.html">Satelite</a>
+        </nav>
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+   </header>
+
+   <div id="countdown">
+       <h1>Until the launch</h1>
+       <div class="countdown">
+            <!-- days -->
+            <div class="countdown-element days">
+                <p class="number">163</p>
+                <span>days</span>
+            </div>
+
+            <!-- hours -->
+            <div class="countdown-element hours">
+                <p class="number">12</p>
+                <span>hours</span>
+            </div>
+    
+            <!-- mins -->
+            <div class="countdown-element mins">
+                <p class="number">17</p>
+                <span>mins</span>
+            </div>
+
+            <!-- seconds -->
+            <div class="countdown-element seconds">
+                <p class="number">22</p>
+                <span>seconds</span>
+            </div>
+       </div>
+   </div>
+
+
+   <script src="../scripts/countdown.js"></script>
+</body>
+</html>

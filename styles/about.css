@@ -1,0 +1,75 @@
+body {
+    background: black;
+    background-image: url("../assets/about-cover.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+#about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+#about .content,
+#about img {
+    width: 50%;
+    object-fit: contain;
+}
+
+#about .content h3 {
+    color: #a132bc;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#about .content h2 {
+    margin: 15px 0;
+    letter-spacing: 5px;
+}
+
+#about .content p,
+#about .content li {
+    line-height: 25px;
+    opacity: 0.7;
+    list-style-position: inside;
+}
+
+#about .content ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+#about .content ul li {
+    width: 50%;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#about .space-ship {
+    animation: float 3s infinite alternate;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}

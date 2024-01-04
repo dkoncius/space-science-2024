@@ -1,0 +1,68 @@
+
+/* Home media */
+@media (max-width: 768px) {
+    .objects img, header .social {
+        display: none;
+    }
+
+    .objects img:first-of-type {
+        display: block;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #home {
+        flex-direction: column-reverse;
+    }
+
+    #home .heading {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 59px;
+        width: 150px;
+    }
+
+    .heading img:first-of-type {
+        position: static !important;
+        margin-top: 50px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #countdown .countdown .countdown-element {
+        width: 50%;
+    }
+}
+
+
+/* About media */
+@media (max-width: 768px){
+    #about {
+        flex-direction: column;
+    }
+
+    #about .content,
+    #about img {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #about ul {
+        gap: 30px;
+    }
+
+    #about .content ul li {
+        width: 47%;
+    }
+
+    #about li,
+    #about p {
+        text-align: justify;
+    }
+}

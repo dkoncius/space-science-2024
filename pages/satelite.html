@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space science: satelite page</title>
+    <!-- Icon -->
+    <link rel="icon" href="../assets/icon.png">
+
+    <!-- Google fonts: roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+   
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/satelite.css">
+    <link rel="stylesheet" href="../styles/media.css">
+</head>
+<body>
+   <header>
+        <a class="brand" href="home.html">
+            <img src="../assets/icon.png" alt="">
+            <h2>Space science</h2>
+        </a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="countdown.html">Countdown</a>
+            <a href="satelite.html">Satelite</a>
+        </nav>
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+   </header>
+
+   <section class="palydovas">
+        <div class="palydovo-informacija">
+            <h1>Kur yra ISS palydovas?</h1>
+            <div class="palydovo-pozicija">         
+                <p class="platuma">Platuma: <span>5.00°</span></p>
+                <p class="ilguma">Ilguma: <span>13.15°</span></p>
+            </div>
+        </div>
+        <div id="issMap"></div>
+   </section>
+
+   <script src="../scripts/satelite.js"></script>
+</body>
+</html>
